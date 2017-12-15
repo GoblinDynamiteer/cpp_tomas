@@ -33,11 +33,11 @@ class myclass
 int main()
 {
     myclass ob1, ob2;
+    myclass ob3(666);
 
     ob1.set_data(123);
     ob2.set_data(321);
 
-    myclass ob3(666);
 
     cout << "Data in obj1: " << ob1.get_data() << endl;
     cout << "Data in obj2: " << ob2.get_data() << endl;
