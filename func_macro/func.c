@@ -1,3 +1,5 @@
+/* Function like macro in C */
+
 #include <stdio.h>
 
 #define INC_ONE_MAX(v, m) (v + 1 > m ? m : v + 1)
