@@ -3,12 +3,22 @@
 #include <iostream>
 using namespace std;
 
-class myobj
+class myclass
 {
     private:
         int data;
 
     public:
+        myclass(int d)
+        {
+            data = d;
+        }
+
+        myclass()
+        {
+            data = 0;
+        }
+
         void set_data(int d)
         {
             data = d;
@@ -22,13 +32,16 @@ class myobj
 
 int main()
 {
-    myobj ob1, ob2;
+    myclass ob1, ob2;
 
     ob1.set_data(123);
     ob2.set_data(321);
 
+    myclass ob3(666);
+
     cout << "Data in obj1: " << ob1.get_data() << endl;
     cout << "Data in obj2: " << ob2.get_data() << endl;
+    cout << "Data in obj3: " << ob3.get_data() << endl;
 
     return 0;
 }
